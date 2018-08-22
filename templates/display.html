@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cluster Visualized</title>
+</head>
+<body>
+    <h3>4 Clusters</h3>
+        <strong>Name of Clusters and Count of Points</strong><br>
+        {% for line in list1%}
+            {{line[0]}}<br>
+        {%endfor%}
+        <br><br> <strong>Centroids: </strong><br>
+        {%for row in centroids1%}
+            {{row[0]}}<br>
+        {%endfor%}
+        <br><br> Time taken to create 4 Clusters is: {{time1}}
+
+<br><br>
+<hr>
+
+
+    <h3>10 Clusters</h3>
+        <strong>Name of Clusters and Count of Points</strong><br>
+    {% for line in list2%}
+            {{line[0]}}<br>
+        {%endfor%}
+    <br><br> <strong>Centroids</strong><br>
+        {% for row1 in centroids2%}
+            {{row1[0]}}<br>
+        {%endfor%}
+        <br><br> Time taken to create 4 Clusters is: {{time2}}
+</body>
+</html>
